@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: procto-gemini-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: AIzaSyCxpimSx991qjRxGwfAcLjz7Lzdl0--Ruw
+        sync: false
